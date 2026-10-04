@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriPlan - Smart Diet Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🥗 NutriPlan</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#planner">Diet Planner</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Eat Better.<br>Live Healthier.</h1>
+            <p>
+                Create a simple personalized meal plan based on
+                your preferences and daily lifestyle.
+            </p>
+
+            <a href="#planner" class="btn">Create My Plan</a>
+        </div>
+
+        <div class="hero-image">
+            🥗
+        </div>
+    </section>
+
+
+    <section class="planner" id="planner">
+
+        <h2>Create Your Diet Plan</h2>
+        <p class="subtitle">
+            Enter your details to generate a meal plan.
+        </p>
+
+        <div class="form-container">
+
+            <div class="input-group">
+                <label>Age</label>
+                <input type="number" id="age" placeholder="Enter your age">
+            </div>
+
+            <div class="input-group">
+                <label>Diet Preference</label>
+
+                <select id="diet">
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="nonvegetarian">Non-Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Activity Level</label>
+
+                <select id="activity">
+                    <option value="low">Low Activity</option>
+                    <option value="moderate">Moderately Active</option>
+                    <option value="high">Highly Active</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Goal</label>
+
+                <select id="goal">
+                    <option value="healthy">Healthy Eating</option>
+                    <option value="fitness">Fitness Support</option>
+                    <option value="energy">More Energy</option>
+                </select>
+            </div>
+
+            <button onclick="generatePlan()" class="generate-btn">
+                Generate Diet Plan
+            </button>
+
+        </div>
+    </section>
+
+
+    <section class="results" id="results">
+
+        <h2>Your Personalized Meal Plan</h2>
+
+        <div class="meal-container">
+
+            <div class="meal-card">
+                <div class="meal-icon">🌅</div>
+                <h3>Breakfast</h3>
+                <p id="breakfast">
+                    Your breakfast will appear here.
+                </p>
+            </div>
+
+            <div class="meal-card">
+                <div class="meal-icon">☀️</div>
+                <h3>Lunch</h3>
+                <p id="lunch">
+                    Your lunch will appear here.
+                </p>
+            </div>
+
+            <div class="meal-card">
+                <div class="meal-icon">🍎</div>
+                <h3>Snack</h3>
+                <p id="snack">
+                    Your snack will appear here.
+                </p>
+            </div>
+
+            <div class="meal-card">
+                <div class="meal-icon">🌙</div>
+                <h3>Dinner</h3>
+                <p id="dinner">
+                    Your dinner will appear here.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="tips" id="about">
+
+        <h2>Healthy Eating Tips</h2>
+
+        <div class="tips-container">
+
+            <div class="tip">
+                💧
+                <h3>Stay Hydrated</h3>
+                <p>Drink water regularly throughout the day.</p>
+            </div>
+
+            <div class="tip">
+                🥦
+                <h3>Eat Variety</h3>
+                <p>Include different fruits, vegetables and whole foods.</p>
+            </div>
+
+            <div class="tip">
+                🏃
+                <h3>Stay Active</h3>
+                <p>Choose physical activities that you enjoy.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 NutriPlan | Smart Diet Planner</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
